@@ -22,7 +22,7 @@
             margin: 0;
         }
         </style>
-        <title>Saobraćajne nezgode u Novom Sadu 2015-2024</title>
+        <title></title>
     </head>
     <body>
         <div id="map">
@@ -429,19 +429,9 @@
             },
         });
         bounds_group.addLayer(layer_Materijalnateta_4);
-            var title = new L.Control();
-            title.onAdd = function (map) {
-                this._div = L.DomUtil.create('div', 'info');
-                this.update();
-                return this._div;
-            };
-            title.update = function () {
-                this._div.innerHTML = '<h2>Saobraćajne nezgode u Novom Sadu 2015-2024</h2>';
-            };
-            title.addTo(map);
         var baseMaps = {};
         var overlaysTree = [
-        {label: '<b>Sudari</b>', selectAllCheckbox: true, children: [
+        {label: '<b>Nezgode</b>', selectAllCheckbox: true, children: [
             {label: '<img src="legend/Materijalnateta_4.png" /> Materijalna šteta', layer: layer_Materijalnateta_4},
             {label: '<img src="legend/Sapoginulim_3.png" /> Sa poginulim', layer: layer_Sapoginulim_3},
             {label: '<img src="legend/Sapovredjenim_2.png" /> Sa povredjenim', layer: layer_Sapovredjenim_2},]},
